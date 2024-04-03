@@ -2,8 +2,11 @@ name: Publish resume in JSONResume format as Github Page
  
 on:
   push:
-    branches: [ master ]
-    
+    branches:
+      - main
+    paths:
+      - 'resume.json'
+      - '.github/workflows/build-resume.yaml'
 jobs:
   check_run:
     runs-on: ubuntu-latest

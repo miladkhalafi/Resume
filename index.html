@@ -1,0 +1,722 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Milad Khalafi</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
+  background: white;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: Helvetica, Arial, "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #56817A;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #56817A;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817A;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: .15em;
+  padding: .15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Milad Khalafi</h1>
+            <h2>An engineer who is enthusiastic about technology</h2>
+        </div>
+        <div class="profile-pic pull-right">
+            <img src="http://khalafi.id.ir/img/avatar.jpg" alt="profile-pic">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About</h3>
+                <div class="keyline"></div>
+            </div>
+        
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-envelope-o"></i>
+                
+                        <h6 class="info-text">
+                            <a href="mailto:milad.khalafi@gmail.com" target="_blank">
+                                milad.khalafi@gmail.com
+                            </a>
+                        </h6>
+                </div>
+        
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-globe"></i>
+                
+                        <h6 class="info-text">
+                            <a href="http://khalafi.id.ir/" target="_blank">
+                                khalafi.id.ir/
+                            </a>
+                        </h6>
+                </div>
+        
+                                <div class="info-tag-container">
+                                    <i class="fa fa-linkedin-square"></i>
+                                
+                                        <h6 class="info-text">
+                                            <a href="https://www.linkedin.com/in/milad-khalafi/" target="_blank">
+                                                milad-khalafi
+                                            </a>
+                                        </h6>
+                                </div>
+        </section>
+            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>DevOps, Infrastructure Management</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Git</h6>
+                                    <h6 class="main-skill skill">Docker</h6>
+                                    <h6 class="main-skill skill">Terraform</h6>
+                                    <h6 class="main-skill skill">Kubernetes</h6>
+                                    <h6 class="main-skill skill">Ansible</h6>
+                                    <h6 class="main-skill skill">Ubuntu Server</h6>
+                                    <h6 class="main-skill skill">Windows Server</h6>
+                                    <h6 class="main-skill skill">Microsoft team foundation server</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Programming &amp; Scripting</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">C#</h6>
+                                    <h6 class="main-skill skill">Go</h6>
+                                    <h6 class="main-skill skill">C/C++</h6>
+                                    <h6 class="main-skill skill">Python</h6>
+                                    <h6 class="main-skill skill">Java Script</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Monitoring, Visualization, Data Analysis</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">RFM</h6>
+                                    <h6 class="main-skill skill">Grafana</h6>
+                                    <h6 class="main-skill skill">BI dashboards</h6>
+                                    <h6 class="main-skill skill">Marketing automation</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Full Stack Development</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Asp .net core</h6>
+                                    <h6 class="main-skill skill">Vue.js (Frontend)</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Computer Vision Engineering</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">OpenCV</h6>
+                            </div>
+                    </section>
+            </div>
+      </aside>
+      <div class="right-column">
+                <div class="container summary-container">
+                    <div class="title">
+                        <h3>Summary</h3>
+                        <div class="keyline"></div>
+                    </div>            <p class="summary">
+                        Versatile and results-oriented professional with a strong background in DevOps, infrastructure management, and full-stack development. Proficient in implementing DevOps strategies utilizing Git, Docker, and automation to optimize deployment workflows. Experienced in cloud infrastructure management with Google Cloud, DigitalOcean, and AWS EC2, including provisioning and managing resources using Terraform. Skilled in creating insightful visualizations with Grafana and conducting data analysis for business intelligence, including RFM analysis and algorithm development. Demonstrated expertise in programming languages such as Python and Go lang for scripting and RESTful API development. Additional proficiency in C# ASP.NET Core for web application development. Proven ability to lead and contribute to projects across various domains, including computer vision engineering and front-end development. Adept at problem-solving and adapting to new technologies to drive innovation and achieve business objectives.
+                    </p>
+                </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Parand Islamic Azad University
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">09/2006</span>
+                    <span class="endDate"> - 09/2010</span>
+            </h5>
+        </div>
+         
+                <h4>Bachelor in Software Engineering</h4>
+        
+                <h5>3.0</h5>
+                      </section>
+        </div>
+          <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+              <section class="item">
+                  <div class="section-header clearfix">
+                      <h3 class="bold pull-left">
+                              SemFio Networks 
+                      </h3>
+                      <h5 class="italic pull-right">
+                              <span class="startDate">07/2022</span>
+                              <span class="endDate"> - 12/2023</span>
+                      </h5>
+                  </div>
+        
+                  <h4>Full Stack Developer / DevOps Developer</h4>
+        
+        
+        
+                  <ul>
+                      <li>Collaborated in the development and implementation of DevOps strategies, employing Git for version control, Docker for containerization, and automation to optimize deployment workflows.</li>
+                      <li>Utilized Google Cloud and DigitalOcean for infrastructure management, ensuring scalable and efficient deployment environments.</li>
+                      <li>Leveraged Python programming to create efficient scripts, enhancing system reliability and automating routine tasks.</li>
+                      <li>Played a pivotal role in utilizing PostgreSQL databases, ensuring data integrity and optimizing performance for scalable applications.</li>
+                      <li>Proficient in Grafana for drawing insightful charts and visualizations, providing key data-driven insights for decision-making processes.</li>
+                      <li>Contributed to Full Stack Development projects using Django, showcasing expertise in both front-end and back-end development.</li>
+                      <li>Developed a simple RESTful API in Go lang for a task management application, enabling users to create, update, and delete tasks with ease. Utilized Terraform to automate the provisioning of cloud resources for the application, ensuring consistent and reproducible deployments.</li>
+                      <li>Implemented a basic e-commerce website frontend using Vue.js, integrating with a mock backend to display product listings and enable user authentication. Used Terraform to manage the infrastructure for hosting the website, deploying it on AWS EC2 instances.</li>
+                      <li>Set up a local Kubernetes cluster for testing and development purposes, deploying containerized microservices such as a sample blog application and a chatbot. Leveraged Terraform to define and manage the cluster&#x27;s infrastructure, enabling easy replication of the environment in production.</li>
+                  </ul>
+              </section>
+              <section class="item">
+                  <div class="section-header clearfix">
+                      <h3 class="bold pull-left">
+                              Nojian 
+                      </h3>
+                      <h5 class="italic pull-right">
+                              <span class="startDate">04/2020</span>
+                              <span class="endDate"> - 06/2022</span>
+                      </h5>
+                  </div>
+        
+                  <h4>Technical Consultant</h4>
+        
+        
+                  <p class="summary">An e-commerce website</p>
+        
+                  <ul>
+                      <li>Modifying HTML, JavaScript, and to optimize the page&#x27;s performance for faster loading and browsing</li>
+                      <li>Developing a virtual makeup component that runs inside a browser (Tensorflow Js)</li>
+                      <li>Redesigning server structure for high availability in high traffic</li>
+                  </ul>
+              </section>
+              <section class="item">
+                  <div class="section-header clearfix">
+                      <h3 class="bold pull-left">
+                              Esam
+                      </h3>
+                      <h5 class="italic pull-right">
+                              <span class="startDate">01/2020</span>
+                              <span class="endDate"> - 03/2020</span>
+                      </h5>
+                  </div>
+        
+                  <h4>Data Analyst Consultant</h4>
+        
+        
+                  <p class="summary">An online auction like ebay in Iran</p>
+        
+                  <ul>
+                      <li>Segmenting customers by RFM(recency, frequency, monetary) analysis</li>
+                      <li>Creating SEO performance report by Crawling website pages</li>
+                  </ul>
+              </section>
+              <section class="item">
+                  <div class="section-header clearfix">
+                      <h3 class="bold pull-left">
+                              Changal
+                      </h3>
+                      <h5 class="italic pull-right">
+                              <span class="startDate">08/2017</span>
+                              <span class="endDate"> - 12/2019</span>
+                      </h5>
+                  </div>
+        
+                  <h4>Data Analyst</h4>
+        
+        
+                  <p class="summary">Changal was an online food ordering company in Iran. Changal customers cloud find menus, order and be delivered from more than 1,500 restaurants all over Iran through the Changal website and mobile application.      </p>
+        
+                  <ul>
+                      <li>Creating BI dashboard for important sales reports</li>
+                      <li>Segmenting customers by RFM(recency, frequency, monetary) analysis</li>
+                      <li>Developing Marketing automation for sending different discount vouchers amount by sms base on customer segmentation(RFM Analysis)</li>
+                      <li>Communicating with russian developer team and translating documents for them</li>
+                      <li>Developing an algorithm to detect customers who are abusing discount system</li>
+                      <li>Collecting and analyzing data on established and prospective customers and competitors</li>
+                      <li>Utilizing Google Tag Manager and implementing new scripts for marketing campaigns</li>
+                  </ul>
+              </section>
+              <section class="item">
+                  <div class="section-header clearfix">
+                      <h3 class="bold pull-left">
+                              Mobaadeleh
+                      </h3>
+                      <h5 class="italic pull-right">
+                              <span class="startDate">01/2016</span>
+                              <span class="endDate"> - 04/2017</span>
+                      </h5>
+                  </div>
+        
+                  <h4>Co-Founder and CTO</h4>
+        
+        
+                  <p class="summary">An iranian payment gateway designed for high availability</p>
+        
+              </section>
+              <section class="item">
+                  <div class="section-header clearfix">
+                      <h3 class="bold pull-left">
+                              AdFinder
+                      </h3>
+                      <h5 class="italic pull-right">
+                              <span class="startDate">11/2014</span>
+                              <span class="endDate"> - 07/2015</span>
+                      </h5>
+                  </div>
+        
+                  <h4>Co-Founder and CTO</h4>
+        
+        
+                  <p class="summary">AdFinder was a marketplace for buying and selling ads</p>
+        
+                  <ul>
+                      <li>Browser Fingerprinting (information collected specifically by interaction with the web browser of the device)</li>
+                      <li>Persistent Cookies (follow the user as they visit other websites)</li>
+                  </ul>
+              </section>
+              <section class="item">
+                  <div class="section-header clearfix">
+                      <h3 class="bold pull-left">
+                              iGift24.com
+                      </h3>
+                      <h5 class="italic pull-right">
+                              <span class="startDate">05/2012</span>
+                              <span class="endDate"> - 10/2014</span>
+                      </h5>
+                  </div>
+        
+                  <h4>Co-Founder and CTO</h4>
+        
+        
+                  <p class="summary">Ecommerce website for selling digital goods</p>
+        
+              </section>
+              <section class="item">
+                  <div class="section-header clearfix">
+                      <h3 class="bold pull-left">
+                              PIAU Robotic team
+                      </h3>
+                      <h5 class="italic pull-right">
+                              <span class="startDate">09/2008</span>
+                              <span class="endDate"> - 09/2009</span>
+                      </h5>
+                  </div>
+        
+                  <h4>Computer Vision Engineer</h4>
+        
+        
+                  <p class="summary">Design and Implement a Vision-Based ball detection using Fuzzy Logic.The system can detect orange color range based on Fuzzy Logic, then it removes the noises and detects the circle shape.</p>
+        
+              </section>
+          </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

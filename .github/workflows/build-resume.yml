@@ -1,43 +1,42 @@
-name: Publish resume in JSONResume format as Github Page
- 
+name: Building New Resume
 on:
   push:
-    branches: [main]
-    
-jobs:
-  check_run:
-    runs-on: ubuntu-latest
-    if: "! contains(github.event.head_commit.message, '[ci skip]')"
-    steps:
-      - run: echo "${{ github.event.head_commit.message }}"
+    branches:
+      - main
+    paths:
+      - 'resume.json'
+      - '.github/workflows/build_resume.yaml'
 
+jobs:
   build:
     runs-on: ubuntu-latest
-    needs: check_run
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: kelvintaywl/action-jsonresume-export@v1
-        name: Export resume as HTML
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          theme: macchiato
-          resume_filepath: resume.json
-          # modifies the index.html in-place
-          output_filepath: docs/index.html
-      - name: Commit published HTML
-        id: commit
+          node-version: '14'
+
+      - name: Install dependencies if package-lock file was not found
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          if [ -n "$(git status --porcelain docs/index.html)" ]; then
-            git add docs/index.html
-            git commit -m "[ci skip] chore(docs/index.html): update resume page"
-            echo ::set-output name=exit_code::0
-          else
-            echo ::set-output name=exit_code::1
-          fi
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        if: steps.commit.outputs.exit_code == 0
+          npm i -g resume-cli
+          npm i jsonresume-theme-macea
+
+      - name: Build recent resumes
+        continue-on-error: true
+        run: |
+          resume export --theme=jsonresume-theme-macea resume.pdf
+          resume export --theme=jsonresume-theme-macea resume.html
+          mv resume.html index.html
+
+      - name: Update resources
+        uses: test-room-7/action-update-file@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          file-path: |
+            resume.pdf
+            index.html
+          commit-msg: Update resources
+          allow-removing: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}

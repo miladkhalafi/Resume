@@ -22,13 +22,13 @@ jobs:
       - name: Install dependencies if package-lock file was not found
         run: |
           npm i -g resume-cli
-          npm i jsonresume-theme-macea
+          npm i jsonresume-theme-stackoverflow-roboto
 
       - name: Build recent resumes
         continue-on-error: true
         run: |
-          resume export --theme=jsonresume-theme-macea resume.pdf
-          resume export --theme=jsonresume-theme-macea resume.html
+          resume export --theme=jsonresume-theme-stackoverflow-roboto resume.pdf
+          resume export --theme=jsonresume-theme-stackoverflow-roboto resume.html
           mv resume.html index.html
 
       - name: Update resources

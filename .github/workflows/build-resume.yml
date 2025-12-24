@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v3
@@ -28,12 +30,10 @@ jobs:
           npx resume export --theme=jsonresume-theme-stackoverflow-roboto resume.html
           mv resume.html index.html
 
-      - name: Update resources
-        uses: test-room-7/action-update-file@v1
-        with:
-          file-path: |
-            resume.pdf
-            index.html
-          commit-msg: Update resources
-          allow-removing: true
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add resume.pdf index.html
+          git commit -m "Update generated resume artifacts" || echo "No changes to commit"
+          git push

@@ -35,6 +35,17 @@ jobs:
           npx resume export --theme=jsonresume-theme-stackoverflow-roboto resume.html
           mv resume.html index.html
 
+      - name: Verify generated files
+        run: |
+          echo "Listing generated files:"
+          ls -lh resume.pdf index.html || echo "Files not found!"
+
+      - name: Upload resume artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: resume.pdf
+
       - name: Commit and Push changes
         run: |
           git config --global user.name "GitHub Action"

@@ -17,18 +17,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '20'
 
-      - name: Install dependencies if package-lock file was not found
-        run: |
-          npm i -g resume-cli
-          npm i jsonresume-theme-stackoverflow-roboto
+      - name: Install dependencies
+        run: npm install
 
       - name: Build recent resumes
-        continue-on-error: true
         run: |
-          resume export --theme=jsonresume-theme-stackoverflow-roboto resume.pdf
-          resume export --theme=jsonresume-theme-stackoverflow-roboto resume.html
+          npx resume export --theme=jsonresume-theme-stackoverflow-roboto resume.pdf
+          npx resume export --theme=jsonresume-theme-stackoverflow-roboto resume.html
           mv resume.html index.html
 
       - name: Update resources

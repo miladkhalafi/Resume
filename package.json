@@ -1,0 +1,14 @@
+{
+    "name": "resume",
+    "version": "1.0.0",
+    "description": "Resume build configuration",
+    "main": "index.js",
+    "scripts": {
+        "build": "resume export --theme=jsonresume-theme-stackoverflow-roboto resume.pdf && resume export --theme=jsonresume-theme-stackoverflow-roboto resume.html"
+    },
+    "dependencies": {
+        "resume-cli": "^3.0.0",
+        "jsonresume-theme-stackoverflow-roboto": "^1.0.1",
+        "puppeteer": "^23.0.0"
+    }
+}

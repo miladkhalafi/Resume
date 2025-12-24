@@ -41,8 +41,13 @@ jobs:
 
       - name: Build recent resumes
         run: |
-          npx resume export --theme=jsonresume-theme-stackoverflow-roboto resume.pdf
+          # Generate HTML first
           npx resume export --theme=jsonresume-theme-stackoverflow-roboto resume.html
+          
+          # Generate PDF from HTML using custom script with --no-sandbox
+          node generate-pdf.js
+          
+          # Rename HTML for hosting
           mv resume.html index.html
 
       - name: Verify generated files

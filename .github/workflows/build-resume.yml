@@ -29,6 +29,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Debug Info
+        run: |
+          echo "Current Commit:"
+          git log -n 1
+          echo "Resume JSON Content (head):"
+          cat resume.json | head -n 20
+
+      - name: Clean before build
+        run: rm -f resume.pdf index.html
+
       - name: Build recent resumes
         run: |
           npx resume export --theme=jsonresume-theme-stackoverflow-roboto resume.pdf

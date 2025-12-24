@@ -1,152 +1,218 @@
 {
-    "basics": {
-      "name": "Milad Khalafi",
-      "label": "An engineer who is enthusiastic about technology",
-      "picture": "http://khalafi.id.ir/img/avatar.jpg",
-      "email": "milad.khalafi@gmail.com",
-      "website": "http://khalafi.id.ir/",
-      "summary": "Versatile and results-oriented professional with a strong background in DevOps, infrastructure management, and full-stack development. Proficient in implementing DevOps strategies utilizing Git, Docker, and automation to optimize deployment workflows. Experienced in cloud infrastructure management with Google Cloud, DigitalOcean, and AWS EC2, including provisioning and managing resources using Terraform. Skilled in creating insightful visualizations with Grafana and conducting data analysis for business intelligence, including RFM analysis and algorithm development. Demonstrated expertise in programming languages such as Python and Go lang for scripting and RESTful API development. Additional proficiency in C# ASP.NET Core for web application development. Proven ability to lead and contribute to projects across various domains, including computer vision engineering and front-end development. Adept at problem-solving and adapting to new technologies to drive innovation and achieve business objectives.",
-      "profiles": [
-        {
-          "network": "linkedin",
-          "username": "milad-khalafi",
-          "url": "https://www.linkedin.com/in/milad-khalafi/"
-        }
+  "basics": {
+    "name": "Milad Khalafi",
+    "label": "An engineer who is enthusiastic about technology",
+    "picture": "http://khalafi.id.ir/img/avatar.jpg",
+    "email": "milad.khalafi@gmail.com",
+    "website": "http://khalafi.id.ir/",
+    "summary": "Versatile and results-oriented professional with a strong background in DevOps, infrastructure management, and full-stack development. Proficient in implementing DevOps strategies utilizing Git, Docker, and automation to optimize deployment workflows. Experienced in cloud infrastructure management with Google Cloud, DigitalOcean, and AWS EC2, including provisioning and managing resources using Terraform. Skilled in creating insightful visualizations with Grafana and conducting data analysis for business intelligence, including RFM analysis and algorithm development. Demonstrated expertise in programming languages such as Python and Go lang for scripting and RESTful API development. Additional proficiency in C# ASP.NET Core for web application development. Proven ability to lead and contribute to projects across various domains, including computer vision engineering and front-end development. Adept at problem-solving and adapting to new technologies to drive innovation and achieve business objectives.",
+    "profiles": [
+      {
+        "network": "linkedin",
+        "username": "milad-khalafi",
+        "url": "https://www.linkedin.com/in/milad-khalafi/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Asr Energy Pak",
+      "position": "CTO",
+      "startDate": "2024-12-01",
+      "summary": "Full-time technology leadership role focused on driving development and tech strategy.",
+      "highlights": [
+        "Spearheaded the technical strategy and architecture, selecting a robust technology stack to ensure scalability and performance for critical energy systems.",
+        "Led the full-cycle development of complex web applications, managing a team of developers to deliver high-quality software on schedule.",
+        "Orchestrated the implementation of IoT data processing pipelines, enabling real-time analytics for energy consumption and metering.",
+        "Established engineering best practices and coding standards, significantly improving code quality and reducing technical debt."
       ]
     },
-    "work": [
-      {
-        "name": "SemFio Networks ",
-        "position": "Full Stack Developer / DevOps Developer",
-        "location": "Canada - Remote",
-        "url": "https://semfionetworks.com/",
-        "startDate": "2022-07-01",
-        "endDate": "2023-12-01",
-        "summary": "",
-        "highlights": [
-          "Collaborated in the development and implementation of DevOps strategies, employing Git for version control, Docker for containerization, and automation to optimize deployment workflows.",
-          "Utilized Google Cloud and DigitalOcean for infrastructure management, ensuring scalable and efficient deployment environments.",
-          "Leveraged Python programming to create efficient scripts, enhancing system reliability and automating routine tasks.",
-          "Played a pivotal role in utilizing PostgreSQL databases, ensuring data integrity and optimizing performance for scalable applications.",
-          "Proficient in Grafana for drawing insightful charts and visualizations, providing key data-driven insights for decision-making processes.",
-          "Contributed to Full Stack Development projects using Django, showcasing expertise in both front-end and back-end development.",
-          "Developed a simple RESTful API in Go lang for a task management application, enabling users to create, update, and delete tasks with ease. Utilized Terraform to automate the provisioning of cloud resources for the application, ensuring consistent and reproducible deployments.",
-          "Implemented a basic e-commerce website frontend using Vue.js, integrating with a mock backend to display product listings and enable user authentication. Used Terraform to manage the infrastructure for hosting the website, deploying it on AWS EC2 instances.",
-          "Set up a local Kubernetes cluster for testing and development purposes, deploying containerized microservices such as a sample blog application and a chatbot. Leveraged Terraform to define and manage the cluster's infrastructure, enabling easy replication of the environment in production."
-        ]
-      },
-      {
-        "name": "Nojian ",
-        "position": "Technical Consultant",
-        "location": "Iran",
-        "url": "https://jistan.com",
-        "startDate": "2020-04-01",
-        "endDate": "2022-06-01",
-        "summary": "An e-commerce website",
-        "highlights": [
-          "Modifying HTML, JavaScript, and to optimize the page's performance for faster loading and browsing",
-          "Developing a virtual makeup component that runs inside a browser (Tensorflow Js)",
-          "Redesigning server structure for high availability in high traffic"
-        ]
-      },
-      {
-        "name": "Esam",
-        "position": "Data Analyst Consultant",
-        "location": "Iran",
-        "url": "https://esam.ir",
-        "startDate": "2020-01-01",
-        "endDate": "2020-03-01",
-        "summary": "An online auction like ebay in Iran",
-        "highlights": [
-          "Segmenting customers by RFM(recency, frequency, monetary) analysis",
-          "Creating SEO performance report by Crawling website pages"
-        ]
-      },
-      {
-        "name": "Changal",
-        "position": "Data Analyst",
-        "location": "Iran",
-        "url": "http://changal.com",
-        "startDate": "2017-08-01",
-        "endDate": "2019-12-01",
-        "summary": "Changal was an online food ordering company in Iran. Changal customers cloud find menus, order and be delivered from more than 1,500 restaurants all over Iran through the Changal website and mobile application.      ",
-        "highlights": [
-          "Creating BI dashboard for important sales reports",
-          "Segmenting customers by RFM(recency, frequency, monetary) analysis",
-          "Developing Marketing automation for sending different discount vouchers amount by sms base on customer segmentation(RFM Analysis)",
-          "Communicating with russian developer team and translating documents for them",
-          "Developing an algorithm to detect customers who are abusing discount system",
-          "Collecting and analyzing data on established and prospective customers and competitors",
-          "Utilizing Google Tag Manager and implementing new scripts for marketing campaigns"
-        ]
-      },
-      {
-        "name": "Mobaadeleh",
-        "position": "Co-Founder and CTO",
-        "location": "Iran",
-        "url": "",
-        "startDate": "2016-01-01",
-        "endDate": "2017-04-01",
-        "summary": "An iranian payment gateway designed for high availability",
-        "highlights": [
-          
-        ]
-      },
-      {
-        "name": "AdFinder",
-        "position": "Co-Founder and CTO",
-        "location": "Iran",
-        "url": "",
-        "startDate": "2014-11-01",
-        "endDate": "2015-07-01",
-        "summary": "AdFinder was a marketplace for buying and selling ads",
-        "highlights": [
-          "Browser Fingerprinting (information collected specifically by interaction with the web browser of the device)",
-          "Persistent Cookies (follow the user as they visit other websites)"
-        ]
-      },
-      {
-        "name": "iGift24.com",
-        "position": "Co-Founder and CTO",
-        "location": "Iran",
-        "website": "",
-        "startDate": "2012-05-01",
-        "endDate": "2014-10-01",
-        "summary": "Ecommerce website for selling digital goods",
-        "highlights": [
-          
-        ]
-      },
-      {
-        "name": "PIAU Robotic team",
-        "position": "Computer Vision Engineer",
-        "location": "Iran",
-        "url": "",
-        "startDate": "2008-09-23",
-        "endDate": "2009-09-23",
-        "summary": "Design and Implement a Vision-Based ball detection using Fuzzy Logic.The system can detect orange color range based on Fuzzy Logic, then it removes the noises and detects the circle shape.",
-        "highlights": [
-          
-        ]
-      }
-    ],
-    "education": [
-      {
-        "institution": "Parand Islamic Azad University",
-        "area": "Software Engineering",
-        "studyType": "Bachelor",
-        "startDate": "2006-09-23",
-        "endDate": "2010-09-23",
-        "gpa": "3.0",
-        "summary": " **Bachelor's Final Project:** Vision-Based Ball Detection System Utilizing Fuzzy Logic\n‎\n#### Methodology:\n1. **Image Acquisition:** Capturing images from a camera feed.\n2. **Preprocessing:** Applying filters to isolate the orange color range.\n3. **Fuzzy Logic-Based Ball Detection:** Employing Fuzzy Logic principles to discern ball presence.\n4. **Noise Removal:** Implementing algorithms to eliminate noise from the detected objects.\n5. **Circular Shape Detection:** Utilizing image processing techniques to identify circular shapes."
-      }
-    ],
-    "skills": [
-      { "name": "DevOps, Infrastructure Management", "level": "", "keywords": ["Git", "Docker", "Terraform","Kubernetes","Ansible","Ubuntu Server","Windows Server","Microsoft team foundation server"] },
-      { "name": "Programming & Scripting", "level": "", "keywords": ["C#", "Go", "C/C++", "Python", "Java Script"] },
-      { "name": "Monitoring, Visualization, Data Analysis", "level": "", "keywords": ["RFM", "Grafana", "BI dashboards", "Marketing automation"] },
-      { "name": "Full Stack Development", "level": "", "keywords": [ "Asp .net core", "Vue.js (Frontend)"] },
-      { "name": "Computer Vision Engineering", "level": "", "keywords": [ "OpenCV"] }
-    ]
-  }
-  
+    {
+      "name": "uTrack Energy",
+      "position": "Full Stack Developer",
+      "location": "Canada - Remote",
+      "url": "https://utrack.energy",
+      "startDate": "2024-06-01",
+      "endDate": "2024-12-01",
+      "summary": "Remote work with a Canadian company",
+      "highlights": [
+        "Developed full-stack solutions utilizing Go (Golang) and Vue.js.",
+        "Implemented automated energy billing modules to calculate consumption costs for submetered units.",
+        "Integrated IoT sensor data pipelines for real-time tracking of electricity, water, and gas usage.",
+        "Optimized data collection from smart meters to ensure accurate and timely billing generation.",
+        "Collaborated with a distributed team to enhance energy management systems."
+      ]
+    },
+    {
+      "name": "SemFio Networks ",
+      "position": "Full Stack Developer / DevOps Developer",
+      "location": "Canada - Remote",
+      "url": "https://semfionetworks.com/",
+      "startDate": "2022-07-01",
+      "endDate": "2023-12-01",
+      "summary": "",
+      "highlights": [
+        "Collaborated in the development and implementation of DevOps strategies, employing Git for version control, Docker for containerization, and automation to optimize deployment workflows.",
+        "Utilized Google Cloud and DigitalOcean for infrastructure management, ensuring scalable and efficient deployment environments.",
+        "Leveraged Python programming to create efficient scripts, enhancing system reliability and automating routine tasks.",
+        "Played a pivotal role in utilizing PostgreSQL databases, ensuring data integrity and optimizing performance for scalable applications.",
+        "Proficient in Grafana for drawing insightful charts and visualizations, providing key data-driven insights for decision-making processes.",
+        "Contributed to Full Stack Development projects using Django, showcasing expertise in both front-end and back-end development.",
+        "Developed a simple RESTful API in Go lang for a task management application, enabling users to create, update, and delete tasks with ease. Utilized Terraform to automate the provisioning of cloud resources for the application, ensuring consistent and reproducible deployments.",
+        "Implemented a basic e-commerce website frontend using Vue.js, integrating with a mock backend to display product listings and enable user authentication. Used Terraform to manage the infrastructure for hosting the website, deploying it on AWS EC2 instances.",
+        "Set up a local Kubernetes cluster for testing and development purposes, deploying containerized microservices such as a sample blog application and a chatbot. Leveraged Terraform to define and manage the cluster's infrastructure, enabling easy replication of the environment in production."
+      ]
+    },
+    {
+      "name": "Nojian ",
+      "position": "Technical Consultant",
+      "location": "Iran",
+      "url": "https://jistan.com",
+      "startDate": "2020-04-01",
+      "endDate": "2022-06-01",
+      "summary": "An e-commerce website",
+      "highlights": [
+        "Modifying HTML, JavaScript, and to optimize the page's performance for faster loading and browsing",
+        "Developing a virtual makeup component that runs inside a browser (Tensorflow Js)",
+        "Redesigning server structure for high availability in high traffic"
+      ]
+    },
+    {
+      "name": "Esam",
+      "position": "Data Analyst Consultant",
+      "location": "Iran",
+      "url": "https://esam.ir",
+      "startDate": "2020-01-01",
+      "endDate": "2020-03-01",
+      "summary": "An online auction like ebay in Iran",
+      "highlights": [
+        "Segmenting customers by RFM(recency, frequency, monetary) analysis",
+        "Creating SEO performance report by Crawling website pages"
+      ]
+    },
+    {
+      "name": "Changal",
+      "position": "Data Analyst",
+      "location": "Iran",
+      "url": "http://changal.com",
+      "startDate": "2017-08-01",
+      "endDate": "2019-12-01",
+      "summary": "Changal was an online food ordering company in Iran. Changal customers cloud find menus, order and be delivered from more than 1,500 restaurants all over Iran through the Changal website and mobile application.      ",
+      "highlights": [
+        "Creating BI dashboard for important sales reports",
+        "Segmenting customers by RFM(recency, frequency, monetary) analysis",
+        "Developing Marketing automation for sending different discount vouchers amount by sms base on customer segmentation(RFM Analysis)",
+        "Communicating with russian developer team and translating documents for them",
+        "Developing an algorithm to detect customers who are abusing discount system",
+        "Collecting and analyzing data on established and prospective customers and competitors",
+        "Utilizing Google Tag Manager and implementing new scripts for marketing campaigns"
+      ]
+    },
+    {
+      "name": "Mobaadeleh",
+      "position": "Co-Founder and CTO",
+      "location": "Iran",
+      "url": "",
+      "startDate": "2016-01-01",
+      "endDate": "2017-04-01",
+      "summary": "An iranian payment gateway designed for high availability",
+      "highlights": []
+    },
+    {
+      "name": "AdFinder",
+      "position": "Co-Founder and CTO",
+      "location": "Iran",
+      "url": "",
+      "startDate": "2014-11-01",
+      "endDate": "2015-07-01",
+      "summary": "AdFinder was a marketplace for buying and selling ads",
+      "highlights": [
+        "Browser Fingerprinting (information collected specifically by interaction with the web browser of the device)",
+        "Persistent Cookies (follow the user as they visit other websites)"
+      ]
+    },
+    {
+      "name": "iGift24.com",
+      "position": "Co-Founder and CTO",
+      "location": "Iran",
+      "website": "",
+      "startDate": "2012-05-01",
+      "endDate": "2014-10-01",
+      "summary": "Ecommerce website for selling digital goods",
+      "highlights": []
+    },
+    {
+      "name": "PIAU Robotic team",
+      "position": "Computer Vision Engineer",
+      "location": "Iran",
+      "url": "",
+      "startDate": "2008-09-23",
+      "endDate": "2009-09-23",
+      "summary": "Design and Implement a Vision-Based ball detection using Fuzzy Logic.The system can detect orange color range based on Fuzzy Logic, then it removes the noises and detects the circle shape.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Parand Islamic Azad University",
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2006-09-23",
+      "endDate": "2010-09-23",
+      "gpa": "3.0",
+      "summary": " **Bachelor's Final Project:** Vision-Based Ball Detection System Utilizing Fuzzy Logic\n‎\n#### Methodology:\n1. **Image Acquisition:** Capturing images from a camera feed.\n2. **Preprocessing:** Applying filters to isolate the orange color range.\n3. **Fuzzy Logic-Based Ball Detection:** Employing Fuzzy Logic principles to discern ball presence.\n4. **Noise Removal:** Implementing algorithms to eliminate noise from the detected objects.\n5. **Circular Shape Detection:** Utilizing image processing techniques to identify circular shapes."
+    }
+  ],
+  "skills": [
+    {
+      "name": "DevOps, Infrastructure Management",
+      "level": "",
+      "keywords": [
+        "Git",
+        "Docker",
+        "Terraform",
+        "Kubernetes",
+        "Ansible",
+        "Ubuntu Server",
+        "Windows Server",
+        "Microsoft team foundation server"
+      ]
+    },
+    {
+      "name": "Programming & Scripting",
+      "level": "",
+      "keywords": [
+        "C#",
+        "Go",
+        "C/C++",
+        "Python",
+        "Java Script"
+      ]
+    },
+    {
+      "name": "Monitoring, Visualization, Data Analysis",
+      "level": "",
+      "keywords": [
+        "RFM",
+        "Grafana",
+        "BI dashboards",
+        "Marketing automation"
+      ]
+    },
+    {
+      "name": "Full Stack Development",
+      "level": "",
+      "keywords": [
+        "Asp .net core",
+        "Vue.js (Frontend)"
+      ]
+    },
+    {
+      "name": "Computer Vision Engineering",
+      "level": "",
+      "keywords": [
+        "OpenCV"
+      ]
+    }
+  ]
+}
